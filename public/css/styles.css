@@ -50,6 +50,7 @@ div {
   border: 1.5px solid #e0e0e0;
   font-weight: bold;
   border-radius: 5px;
+  letter-spacing: 1px;
 }
 .resume-text:hover {
   background-color: #e0e0e0;
@@ -63,7 +64,9 @@ div {
   /* margin:0 10%; */
 }
 .hello,
-.details {
+.details,
+.icons,
+.arrow-down {
   display: flex;
   justify-content: center;
   margin: 5px 30% 10px 0;
@@ -98,36 +101,24 @@ div {
   font-family: "Ubuntu", sans-serif;
   color: #e0e0e0;
   letter-spacing: 5px;
+  font-size: 25px;
 }
 
-.jumbotron-social {
-  font-size: 20px;
-  text-align: center;
+.icons {
+  display: flex;
+  flex-direction: row;
+  font-family: "Ubuntu", sans-serif;
 }
-.li-social-links {
-  list-style: none;
-  display: inline-block;
-}
-.ul-social {
-  margin-left: -10%;
-}
-.social {
-  padding: 20px;
+.icon-size {
   font-size: 40px;
+  margin: 10px;
+  color: #e0e0e0;
 }
-#down-arrow {
-  text-align: center;
-  margin-top: 100px;
+.arrow-down-size {
+  font-size: 60px;
+  margin: 10px;
+  color: #e0e0e0;
 }
-#down-arrow a {
-  color: white;
-}
-#down-arrow i {
-  padding: 4px;
-  border: 1px solid white;
-  border-radius: 50%;
-}
-
 .details {
   display: flex;
   flex-direction: column;
@@ -135,10 +126,10 @@ div {
   font-family: "Ubuntu", sans-serif;
 }
 .details p {
-  font-size: 18px;
+  font-size: 25px;
   padding: 5px;
   font-weight: bolder;
-  letter-spacing: 0.5px;
+  letter-spacing: 1.5px;
 }
 
 .fade-trans,
@@ -154,7 +145,9 @@ div {
 @media only screen and (max-width: 900px) {
   .hello,
   .aia-meaning,
-  .details {
+  .details,
+  .icons,
+  .arrow-down {
     margin: 10px;
   }
   .bkg {
@@ -164,6 +157,31 @@ div {
       rgba(0, 0, 0, 1) 61%,
       rgba(143, 153, 156, 1) 100%
     );
-    /* background-image: none; */
   }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo-container,
+  .resume-container {
+    margin: 20px;
+  }
+  .logo-text{
+    font-size: 30px;
+  }
+  .resume-text {
+    padding: 5px;
+  }
+  .hello-text {
+    font-size: 50px;
+  }
+  .name-meaning {
+    font-size: 16px;
+  }
+  .details p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding:5px;
+  }
+
+
 }
