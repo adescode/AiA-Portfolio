@@ -10,16 +10,20 @@ div {
   color: #ffffff;
 }
 .bkg {
-
-  background: linear-gradient(111deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 61%, rgba(143,153,156,1) 100%);
+  background: linear-gradient(
+    111deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 61%,
+    rgba(143, 153, 156, 1) 100%
+  );
   height: 100vh;
   background-image: url("../images/aiaWebPage.png");
   background-position: right;
   background-size: cover;
   overflow: hidden;
 }
-.container{
-  margin: 0px
+.container {
+  margin: 0px;
 }
 .header {
   display: flex;
@@ -31,7 +35,7 @@ div {
   margin: 20px 0 0 10%;
 }
 .logo-text {
-  font-family: "Baloo", cursive;
+  font-family: "Gamja Flower", cursive;
   color: #e0e0e0;
   font-size: 50px;
 }
@@ -54,14 +58,15 @@ div {
 .intro {
   display: flex;
   flex-direction: column;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   /* margin:0 10%; */
 }
-.hello, .details {
+.hello,
+.details {
   display: flex;
   justify-content: center;
-  margin:5px 30% 10px 0;
+  margin: 5px 30% 10px 0;
 }
 .hello-text {
   font-size: 60px;
@@ -73,7 +78,7 @@ div {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin:5px 30% 10px 0;
+  margin: 5px 30% 10px 0;
 }
 .letter-meaning {
   display: flex;
@@ -123,35 +128,42 @@ div {
   border-radius: 50%;
 }
 
-.details{
+.details {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
 }
-.details p{
+.details p {
   font-size: 18px;
-  padding:5px;
+  padding: 5px;
   font-weight: bolder;
   letter-spacing: 0.5px;
 }
 
 .fade-trans,
 .fade-trans:hover {
-    -o-transition: 1s;
-    -ms-transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s; 
-    /* ...and now for the proper property */
-    transition: 1s;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  /* ...and now for the proper property */
+  transition: 1s;
 }
 
 @media only screen and (max-width: 900px) {
-  .hello, .aia-meaning, .details{
-    margin:10px;
+  .hello,
+  .aia-meaning,
+  .details {
+    margin: 10px;
   }
   .bkg {
-  background: linear-gradient(111deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 61%, rgba(143,153,156,1) 100%);
-  /* background-image: none; */
+    background: linear-gradient(
+      111deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 1) 61%,
+      rgba(143, 153, 156, 1) 100%
+    );
+    /* background-image: none; */
   }
 }
