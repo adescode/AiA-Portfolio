@@ -1,61 +1,77 @@
+*,
+html,
 body {
   font-family: "Raleway", sans-serif;
   margin: 0px;
   padding: 0px;
+  scroll-behavior: smooth;
 }
-p,
-h1,
-h2,
-div {
-  color: #ffffff;
-}
+* {box-sizing: border-box}
+
 .bkg {
-  background: linear-gradient(
-    111deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 61%,
-    rgba(143, 153, 156, 1) 100%
-  );
+  background: linear-gradient(111deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 61%, rgba(143, 153, 156, 1) 100%);
   min-height: 100vh;
   max-height: 120%;
   background-image: url("../images/aiaWebPage.png");
+  /* background-attachment: fixed; */
   background-position: right;
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
+/* General style */
+
 .container {
   margin: 0px;
 }
+
+.show-on-desktop,
+.show-on-mobile {
+  display: block;
+}
+
+/* end of general style */
+
+/* Section one */
+
 .header {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+
 .logo-container {
   margin: 20px 0 0 10%;
 }
+
 .logo-text {
   font-family: "Gamja Flower", cursive;
   color: #e0e0e0;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .resume-container {
   margin: 20px 10% 0 0;
+  cursor: pointer;
 }
-.resume-text {
+
+.resume-text a{
   color: #e0e0e0;
   font-family: "Roboto Condensed", sans-serif;
   padding: 10px;
+  text-decoration: none;
   border: 1.5px solid #e0e0e0;
   font-weight: bold;
   border-radius: 5px;
   letter-spacing: 1px;
 }
-.resume-text:hover {
+
+.resume-text a:hover {
   background-color: #e0e0e0;
   color: #000000;
 }
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -63,6 +79,7 @@ div {
   align-items: center;
   /* margin:0 10%; */
 }
+
 .hello,
 .details,
 .icons,
@@ -71,65 +88,77 @@ div {
   justify-content: center;
   margin: 5px 30% 10px 0;
 }
+
 .hello-text {
   font-size: 60px;
   font-weight: bold;
   font-family: "Ubuntu", sans-serif;
   color: #e0e0e0;
 }
+
 .aia-meaning {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 5px 30% 10px 0;
 }
+
 .letter-meaning {
   display: flex;
   flex-direction: column;
   margin: 10px;
   align-items: center;
 }
+
 .name-letter {
   font-size: 150px;
   font-weight: bold;
   font-family: "Baloo", cursive;
   color: #e0e0e0;
 }
+
 .name-meaning {
   font-weight: bolder;
   margin-top: -20px;
   font-family: "Ubuntu", sans-serif;
   color: #e0e0e0;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-size: 25px;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
+  color: #e0e0e0;
   font-family: "Ubuntu", sans-serif;
 }
+
 .icon-size {
   font-size: 40px;
   margin: 10px;
   color: #e0e0e0;
 }
+
 .arrow-down-size {
   font-size: 60px;
   margin: 10px;
   color: #e0e0e0;
 }
+
 .details {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #e0e0e0;
   font-family: "Ubuntu", sans-serif;
 }
+
 .details p {
   font-size: 25px;
   padding: 5px;
   font-weight: bolder;
   letter-spacing: 1.5px;
+  color: #e0e0e0;
 }
 
 .fade-trans,
@@ -142,7 +171,119 @@ div {
   transition: 1s;
 }
 
+/* End of section one */
+
+/* section two */
+
+#section2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e0e0e0;
+  color: #303030;
+}
+
+.about-me, .skills {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  color: inherit;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about-me h1, .skills h1 {
+  color: inherit;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.about-me-details {
+  color: inherit;
+  padding: 10px;
+}
+
+.about-me-details p {
+  font-size: 16px;
+  padding: 10px;
+  line-break: strict;
+  line-height: 1.5;
+  font-weight: 600;
+  text-indent: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.about-me-details-desktop {
+  display: none;
+}
+
+/* End of section two */
+
+/* Section three */
+#section3 {
+  min-height: 100vh;
+  background-image: url("../images/wd.png");
+  /* background-attachment: fixed; */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #303030;
+}
+.skills h1{
+  color: #ffffff;
+}
+.bar-container{
+  padding: 16px;
+}
+
+.skill-images{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 16px;
+  margin-top: 30px;
+}
+
+/* End section three */
+
+/* Footer */
+#footer{
+  display: flex;
+  justify-content: center;
+  padding:16px;
+  background-color: #303030;
+}
+.footer{
+  color:#e0e0e0;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+}
+/* End footer */
+
+/* Animated Skill bar */
+.skillbarz{
+  width: 100%;
+  background-color: #ddd;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+.skillz {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  width: 0%;
+  border: none;
+  border-radius: 5px;
+}
+
+/* End of animated skill bar */
+
 @media only screen and (max-width: 900px) {
+
   .hello,
   .aia-meaning,
   .details,
@@ -150,38 +291,56 @@ div {
   .arrow-down {
     margin: 10px;
   }
+
   .bkg {
-    background: linear-gradient(
-      111deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 0, 0, 1) 61%,
-      rgba(143, 153, 156, 1) 100%
-    );
+    background: linear-gradient(111deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 61%, rgba(143, 153, 156, 1) 100%);
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .about-me-details-desktop {
+    display: block;
+  }
+
+  .about-me-details p, .bar-container, .skill-images {
+    padding: 10px 10%;
+  }
+
+  .show-on-mobile {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 600px) {
+
   .logo-container,
   .resume-container {
     margin: 20px;
   }
-  .logo-text{
+
+  .logo-text {
     font-size: 30px;
   }
+
   .resume-text {
     padding: 5px;
   }
+
   .hello-text {
     font-size: 50px;
   }
+
   .name-meaning {
     font-size: 16px;
   }
+
   .details p {
     font-size: 18px;
     letter-spacing: 1px;
-    padding:5px;
+    padding: 5px;
   }
 
-
+  .show-on-desktop {
+    display: none;
+  }
 }
