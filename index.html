@@ -55,7 +55,10 @@
 
           <div class="resume-container">
             <p class="resume-text">
-              <a href="https://drive.google.com/uc?authuser=0&id=1McEYGJDNdWiQnDLmYJMg40KJxgAWPqm3&export=download">RESUME</a>
+              <a
+                href="https://drive.google.com/uc?authuser=0&id=1McEYGJDNdWiQnDLmYJMg40KJxgAWPqm3&export=download"
+                >RESUME</a
+              >
             </p>
           </div>
         </div>
@@ -247,22 +250,107 @@
         <!-- End Skill Bar -->
       </div>
       <div class="skill-images">
-        <div> <img id="myImg" src="public/images/angular.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/react.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/reactnative.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/boostrap.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/bulma.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/electron.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/materialize2.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/ionic.png" alt="Snow" style="width:100%;max-width:100px"> </div>
-        <div> <img id="myImg" src="public/images/firebase.png" alt="Snow" style="width:100%;max-width:100px"> </div>
+        <div class="skill-image-container" title="Angular" >
+          <img
+            id="myImg"
+            src="public/images/angular.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="React" >
+          <img
+            id="myImg"
+            src="public/images/react.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="React Native" >
+          <img
+            id="myImg"
+            src="public/images/reactnative.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Bootstrap">
+          <img
+            id="myImg"
+            src="public/images/boostrap.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Bulma">
+          <img
+            id="myImg"
+            src="public/images/bulma.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Electron">
+          <img
+            id="myImg"
+            src="public/images/electron.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Materialize">
+          <img
+            id="myImg"
+            src="public/images/materialize2.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Ionic">
+          <img
+            id="myImg"
+            src="public/images/ionic.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
+        <div class="skill-image-container" title="Firebase">
+          <img
+            id="myImg"
+            src="public/images/firebase.png"
+            alt="Snow"
+            style="width:100%;max-width:100px"
+          />
+        </div>
       </div>
     </section>
-    <footer id="footer">
-      <div class="footer">Made with <span style="color:#ff0000; font-size: 30px;">&#9829;</span> by @Adescode</div>
-    </footer>
+    <section>
+      <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbw4z3kIzmQ34ApLKhLrzHhqP96wFBR615qzdSE0/exec">
+        <input type="text" name="name" class="name">
+        <input type="text" name="message" class="message">
+        <input type="email" name="email" id="email" class="email">
+        <input type="text" name="color" class="color">
+        <button type="submit">Send</button>
 
+        <div style="display:none" class="thankyou_message">
+          <!-- You can customize the thankyou message by editing the code below -->
+          <h2><em>Thanks</em> for contacting us! We will get back to you soon!
+          </h2>
+         </div>
+      </form>
+    </section>
     <!-- End of section three -->
+
+    <!-- Footer  -->
+    <footer id="footer">
+      <div class="footer">
+        <p>Made with</p>
+        <p class="animated infinite pulse" style="color:#ff0000; font-size: 30px; padding:0 5px">&#9829;</p> by
+        <p>@Adescode</p>
+      </div>
+    </footer>
+    <!-- https://script.google.com/macros/s/AKfycbw4z3kIzmQ34ApLKhLrzHhqP96wFBR615qzdSE0/exec -->
+    <!-- End of Footer -->
     <script>
       jQuery(document).ready(function() {
         jQuery(".skillbarz").each(function() {
@@ -277,5 +365,6 @@
         });
       });
     </script>
+    <script data-cfasync="false" type="text/javascript" src="public/js/form-submission-handler.js"></script>
   </body>
 </html>

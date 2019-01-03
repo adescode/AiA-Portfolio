@@ -222,7 +222,7 @@ body {
 #section3 {
   min-height: 100vh;
   background-image: url("../images/wd.png");
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -244,6 +244,12 @@ body {
   margin-top: 30px;
 }
 
+.skill-image-container{
+  margin: 3px;
+  border-radius: 10%;
+  overflow: hidden;
+}
+
 /* End section three */
 
 /* Footer */
@@ -254,6 +260,9 @@ body {
   background-color: #303030;
 }
 .footer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color:#e0e0e0;
   font-size: 20px;
   font-family: 'Ubuntu', sans-serif;
