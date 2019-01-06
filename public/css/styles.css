@@ -244,7 +244,7 @@ body {
   margin-top: 30px;
 }
 
-.skill-image-container{
+.skill-images > div{
   margin: 3px;
   border-radius: 10%;
   overflow: hidden;
